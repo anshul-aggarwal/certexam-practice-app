@@ -25,7 +25,7 @@ DIFFICULTY_DISTRIBUTIONS = {
 # --- Page Configuration ---
 # 2. Changed layout to centered (narrow) by removing the layout="wide" argument.
 st.set_page_config(
-    page_title="SpikeUp.ai Practice"
+    page_title="Exam Practice"
 )
 
 # --- Data Loading and Caching ---
@@ -143,7 +143,7 @@ if 'start_time' not in st.session_state:
     st.session_state.start_time = None
 
 # --- UI Rendering ---
-st.title("SpikeUp.ai Practice Tool")
+st.title("Certification Exam Practice Tool")
 
 question_data = load_data(QUESTION_FILE)
 
