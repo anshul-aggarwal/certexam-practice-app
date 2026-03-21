@@ -13,13 +13,14 @@ CERT_NAME_MAPPING = {
     "PBI": "PowerBI",
     "MAZ_FDM": "Microsoft Azure Fundamentals",
     "MAZ_DVA": "Microsoft Azure Developer Associate",
-    "GCP_ADP": "Google Cloud Associate Data Practitioner"
+    "GCP_ADP": "Google Cloud Associate Data Practitioner",
+    "GCP_PML": "Google Cloud Professional Machine Learning Engineer",
 }
 
 DIFFICULTY_DISTRIBUTIONS = {
     "Easy": {"easy": 0.70, "medium": 0.25, "hard": 0.05},
-    "Medium": {"easy": 0.55, "medium": 0.35, "hard": 0.10},
-    "Hard": {"easy": 0.35, "medium": 0.40, "hard": 0.25},
+    "Medium": {"easy": 0.50, "medium": 0.30, "hard": 0.20},
+    "Hard": {"easy": 0.30, "medium": 0.35, "hard": 0.35},
 }
 
 # --- Page Configuration ---
