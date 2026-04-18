@@ -157,16 +157,18 @@ if not st.session_state.test_started:
     
     cert_keys = list(CERT_NAME_MAPPING.keys())
     
-    col1, col2, col3 = st.columns(3)
-    with col1:
+    col_1 = st.columns(1)
+    with col_1:
         selected_cert = st.selectbox(
             "1. Select Certification", 
             options=cert_keys,
             format_func=lambda key: f"{CERT_NAME_MAPPING.get(key, key)} ({key})"
         )
-    with col2:
+
+    col1, col2 = st.columns(2)
+    with col1:
         num_questions = st.selectbox("2. Select Number of Questions", options=NUM_QUESTIONS_OPTIONS)
-    with col3:
+    with col2:
         difficulty = st.selectbox("3. Select Test Difficulty", options=["Easy", "Medium", "Hard"])
         
     if st.button("Start Test", type="primary"):
