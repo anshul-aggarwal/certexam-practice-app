@@ -5,16 +5,16 @@ import math
 from datetime import timedelta
 
 # --- Configuration and Constants ---
-QUESTION_FILE = "Question Bank SpikeUp.xlsx"
+QUESTION_FILE = "active_practice_tests.xlsx"
 NUM_QUESTIONS_OPTIONS = [5, 20, 40] 
 
 CERT_NAME_MAPPING = {
-    "IBM_DS": "IBM Data Science Professional",
-    "PBI": "PowerBI",
-    "MAZ_FDM": "Microsoft Azure Fundamentals",
-    "MAZ_DVA": "Microsoft Azure Developer Associate",
-    "GCP_ADP": "Google Cloud Associate Data Practitioner",
-    "GCP_PML": "Google Cloud Professional Machine Learning Engineer",
+    "IBM_DS_A": "IBM Data Science Professional (Courses 1-5)",
+    # "PBI": "PowerBI",
+    # "MAZ_FDM": "Microsoft Azure Fundamentals",
+    # "MAZ_DVA": "Microsoft Azure Developer Associate",
+    # "GCP_ADP": "Google Cloud Associate Data Practitioner",
+    # "GCP_PML": "Google Cloud Professional Machine Learning Engineer",
 }
 
 DIFFICULTY_DISTRIBUTIONS = {
