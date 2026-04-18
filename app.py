@@ -204,7 +204,7 @@ elif st.session_state.current_question_index < len(st.session_state.questions):
     
     question_row = st.session_state.questions.iloc[st.session_state.current_question_index]
     
-    options = [question_row[f'option_{i}'] for i in range(1, 5)]
+    options = [str(question_row[f'option_{i}']) for i in range(1, 5)]
     correct_options_list = sorted([opt.strip() for opt in question_row['correct_options'].split(',')])
     is_multiple_choice = question_row['is_multiple']
 
