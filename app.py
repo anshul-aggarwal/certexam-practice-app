@@ -157,13 +157,11 @@ if not st.session_state.test_started:
     
     cert_keys = list(CERT_NAME_MAPPING.keys())
     
-    col_1 = st.columns(1)
-    with col_1:
-        selected_cert = st.selectbox(
-            "1. Select Certification", 
-            options=cert_keys,
-            format_func=lambda key: f"{CERT_NAME_MAPPING.get(key, key)} ({key})"
-        )
+    selected_cert = st.selectbox(
+        "1. Select Certification", 
+        options=cert_keys,
+        format_func=lambda key: f"{CERT_NAME_MAPPING.get(key, key)} ({key})"
+    )
 
     col1, col2 = st.columns(2)
     with col1:
