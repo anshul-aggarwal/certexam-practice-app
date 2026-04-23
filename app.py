@@ -115,7 +115,7 @@ def display_results():
         review_data.append({
             "Question": row['question'],
             "Your Answer": st.session_state.user_answers[i],
-            "Correct Answer": ", ".join([row[f"option_{opt.strip()}"] for opt in row['correct_options'].split(',')]),
+            "Correct Answer": ", ".join([row[f"option_{str(opt).strip()}"] for opt in str(row['correct_options']).split(',')]),
             "Result": st.session_state.results[i]
         })
         
