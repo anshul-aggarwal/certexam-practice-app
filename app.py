@@ -6,10 +6,10 @@ from datetime import timedelta
 
 # --- Configuration and Constants ---
 QUESTION_FILE = "active_practice_tests.xlsx"
-NUM_QUESTIONS_OPTIONS = [5, 20, 40] 
+NUM_QUESTIONS_OPTIONS = [5, 20, 30, 50] 
 
 CERT_NAME_MAPPING = {
-    "IBM_DS_A": "IBM Data Science Professional (Courses 1-5)",
+    "IBM_DS": "IBM Data Science Professional",
     # "PBI": "PowerBI",
     # "MAZ_FDM": "Microsoft Azure Fundamentals",
     # "MAZ_DVA": "Microsoft Azure Developer Associate",
