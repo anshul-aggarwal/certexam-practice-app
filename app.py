@@ -6,21 +6,21 @@ from datetime import timedelta
 
 # --- Configuration and Constants ---
 QUESTION_FILE = "active_practice_tests.xlsx"
-NUM_QUESTIONS_OPTIONS = [5, 20, 30, 50] 
+NUM_QUESTIONS_OPTIONS = [5, 20, 30, 50]
 
 CERT_NAME_MAPPING = {
-    "IBM_DS": "IBM Data Science Professional",
+    # "IBM_DS": "IBM Data Science Professional",
     # "PBI": "PowerBI",
-    # "MAZ_FDM": "Microsoft Azure Fundamentals",
+    "MAZ_FDM": "Microsoft Azure Fundamentals",
     # "MAZ_DVA": "Microsoft Azure Developer Associate",
     # "GCP_ADP": "Google Cloud Associate Data Practitioner",
     # "GCP_PML": "Google Cloud Professional Machine Learning Engineer",
 }
 
 DIFFICULTY_DISTRIBUTIONS = {
-    "Easy": {"easy": 0.70, "medium": 0.25, "hard": 0.05},
-    "Medium": {"easy": 0.50, "medium": 0.30, "hard": 0.20},
-    "Hard": {"easy": 0.30, "medium": 0.35, "hard": 0.35},
+    "Easy": {"easy": 0.50, "medium": 0.30, "hard": 0.20},
+    "Medium": {"easy": 0.30, "medium": 0.40, "hard": 0.30},
+    "Hard": {"easy": 0.10, "medium": 0.30, "hard": 0.60},
 }
 
 # --- Page Configuration ---
